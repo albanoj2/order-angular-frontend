@@ -26,6 +26,23 @@ export class Order {
 		this.links = json._links;
 	}
 
+    public serialize(): any {
+        return {
+            'id': this.id,
+            'description': this.description,
+            'costInCents': this.costInCents,
+            'complete': this.isComplete
+        };
+    }
+
+    set cost(cost: number) {
+        this.costInCents = cost * 100.0;
+    }
+
+    public toggleComplete() {
+        this.isComplete = !this.isComplete;
+    }
+
     get isIncomplete(): boolean {
         return !this.isComplete;
     }

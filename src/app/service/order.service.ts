@@ -7,7 +7,7 @@ import 'rxjs/add/operator/toPromise';
 export class OrderService {
   
     private ordersUrl = 'http://localhost:8080/order';
-    private headers = new Headers({'Access-Control-Allow-Origin': '*', 'Accepts': 'application/json'});
+    private headers = new Headers({'Access-Control-Allow-Origin': '*', 'Accepts': 'application/json', 'Content-Type': 'application/json'});
   
     public constructor(private http: Http) {}
    
@@ -27,6 +27,20 @@ export class OrderService {
 		return this.http.delete(`${this.ordersUrl}/${id}`, {headers: this.headers})
              .toPromise()
 			 .then(response => null)
+             .catch(this.handleError);
+	}
+
+	public getOrder(id: number): Promise<Order> {
+        return this.http.get(`${this.ordersUrl}/${id}`, {headers: this.headers})
+             .toPromise()
+			 .then(response => new Order(response.json()))
+             .catch(this.handleError);
+    }
+
+	public updateOrder(order: Order): Promise<Order> {
+		return this.http.put(`${this.ordersUrl}/${order.id}`, JSON.stringify(order.serialize()), {headers: this.headers})
+             .toPromise()
+			 .then(response => order)
              .catch(this.handleError);
 	}
 }

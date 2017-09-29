@@ -1,39 +1,36 @@
-<div class="center-container">
-	<h1 class="title">Order Management System <span class="badge">{{orders.length}}</span></h1>
-	<div class="orders">
-		<div class="search">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1" [(ngModel)]="searchDescription">
-				<span class="input-group-addon" id="basic-addon1">
-					<span class="glyphicon glyphicon-search"></span>
-				</span>
-			</div>
+<div class="orders">
+	<div class="search">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1" [(ngModel)]="searchDescription">
+			<span class="input-group-addon" id="basic-addon1">
+				<span class="glyphicon glyphicon-search"></span>
+			</span>
 		</div>
-		<table class="table table-sm">
-			<thead>
-				<tr>
-					<th class="actions"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></th>
-					<th class="description">Description</th>
-					<th class="cost">Cost</th>
-					<th class="status">Status</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr *ngFor="let order of orders | orderDescriptionFilter:searchDescription" class="order" scope="row" [ngClass]="{'complete': order.isComplete}">
-					<td class="actions">
-						<span class="glyphicon glyphicon-pencil edit"></span>
-						<span class="glyphicon glyphicon-remove delete" (click)="deleteOrder(order)"></span></td>
-					<td class="description">{{order.description}}</td>
-					<td class="cost">{{order.costString}}</td>
-					<td class="status">
-						<span *ngIf="order.isIncomplete" class="label label-default">Incomplete</span>
-						<span *ngIf="order.isComplete" class="label label-success">Complete</span>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="general-actions">
-			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Create</button>
-		</div>
+	</div>
+	<table class="table table-sm">
+		<thead>
+			<tr>
+				<th class="actions"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></th>
+				<th class="description">Description</th>
+				<th class="cost">Cost</th>
+				<th class="status">Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let order of orders | orderDescriptionFilter:searchDescription" class="order" scope="row" [ngClass]="{'complete': order.isComplete}">
+				<td class="actions">
+					<span class="glyphicon glyphicon-pencil edit" (click)="editOrder(order)"></span>
+					<span class="glyphicon glyphicon-remove delete" (click)="deleteOrder(order)"></span></td>
+				<td class="description">{{order.description}}</td>
+				<td class="cost">{{order.costString}}</td>
+				<td class="status">
+					<span *ngIf="order.isIncomplete" class="label label-default">Incomplete</span>
+					<span *ngIf="order.isComplete" class="label label-success">Complete</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="general-actions">
+		<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Create</button>
 	</div>
 </div>

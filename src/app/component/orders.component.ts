@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Order } from '../order.resource';
 import { OrderService } from '../service/order.service';
 
@@ -12,7 +13,7 @@ export class OrdersComponent implements OnInit {
     orders: Order[] = [];
 	searchDescription: string;
 
-    constructor(private orderService: OrderService) { }
+    constructor(private orderService: OrderService, private router: Router) { }
 
     ngOnInit() {
         this.retrieveOrders();
@@ -28,4 +29,7 @@ export class OrdersComponent implements OnInit {
 			.then(() => this.retrieveOrders());
 	}
 
+	public editOrder(order: Order) {
+		this.router.navigate(['/orders', order.id, 'edit']);
+	}
 }
