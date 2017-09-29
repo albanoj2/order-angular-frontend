@@ -9,7 +9,8 @@ import { OrderService } from '../service/order.service';
 })
 export class OrdersComponent implements OnInit {
   
-    orders: Order[];
+    orders: Order[] = [];
+	searchDescription: string;
 
     constructor(private orderService: OrderService) { }
 
@@ -18,7 +19,8 @@ export class OrdersComponent implements OnInit {
     }
 
 	private retrieveOrders() {
-		this.orderService.getOrders().then(orders => this.orders = orders);
+		this.orderService.getOrders()
+			.then(orders => this.orders = orders);
 	}
 
 	public deleteOrder(order: Order) {

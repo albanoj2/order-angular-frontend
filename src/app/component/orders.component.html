@@ -1,6 +1,14 @@
 <div class="center-container">
+	<h1 class="title">Order Management System <span class="badge">{{orders.length}}</span></h1>
 	<div class="orders">
-		<strong>Order count:</strong> {{orders?.length}}
+		<div class="search">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1" [(ngModel)]="searchDescription">
+				<span class="input-group-addon" id="basic-addon1">
+					<span class="glyphicon glyphicon-search"></span>
+				</span>
+			</div>
+		</div>
 		<table class="table table-sm">
 			<thead>
 				<tr>
@@ -11,7 +19,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let order of orders" class="order" scope="row">
+				<tr *ngFor="let order of orders | orderDescriptionFilter:searchDescription" class="order" scope="row" [ngClass]="{'complete': order.isComplete}">
 					<td class="actions">
 						<span class="glyphicon glyphicon-pencil edit"></span>
 						<span class="glyphicon glyphicon-remove delete" (click)="deleteOrder(order)"></span></td>
@@ -24,5 +32,8 @@
 				</tr>
 			</tbody>
 		</table>
+		<div class="general-actions">
+			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Create</button>
+		</div>
 	</div>
 </div>

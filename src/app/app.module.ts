@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { OrdersComponent } from './component/orders.component';
 
 import { OrderService } from './service/order.service';
+import { OrderDescriptionPipe } from './component/order-description.filter';
 
 @NgModule({
     declarations: [
         AppComponent,
-        OrdersComponent
+        OrdersComponent,
+        OrderDescriptionPipe
     ],
     imports: [
         BrowserModule,

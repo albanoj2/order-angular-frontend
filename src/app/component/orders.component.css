@@ -4,6 +4,19 @@
 	margin-top: 200px;
 }
 
+.title {
+	margin-bottom: 65px;
+}
+
+.search {
+	float: right;
+	margin-bottom: 15px;
+}
+
+.search .input-group {
+	width: 250px;
+}
+
 .orders .actions {
 	width: 70px;
 	text-align: center;
@@ -12,6 +25,10 @@
 .orders .actions .edit,
 .orders .actions .delete {
 	color: #777777;
+}
+
+.orders .actions .edit {
+	margin-right: 8px;
 }
 
 .orders .actions .edit:hover {
@@ -31,4 +48,10 @@
 
 .orders .cost {
 	width: 100px;
+}
+
+.general-actions {
+	border-top: 1px solid #dddddd;
+	padding-top: 12px;
+	text-align: right;
 }
