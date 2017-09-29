@@ -1,0 +1,34 @@
+.center-container {
+	margin: auto;
+	width: 800px;
+	margin-top: 200px;
+}
+
+.orders .actions {
+	width: 70px;
+	text-align: center;
+}
+
+.orders .actions .edit,
+.orders .actions .delete {
+	color: #777777;
+}
+
+.orders .actions .edit:hover {
+	color: #337ab7;
+	cursor: pointer;
+}
+
+.orders .actions .delete:hover {
+	color: #d9534f;
+	cursor: pointer;
+}
+
+.orders .status {
+	width: 70px;
+	text-align: center;
+}
+
+.orders .cost {
+	width: 100px;
+}

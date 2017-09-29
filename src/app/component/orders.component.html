@@ -1,0 +1,28 @@
+<div class="center-container">
+	<div class="orders">
+		<strong>Order count:</strong> {{orders?.length}}
+		<table class="table table-sm">
+			<thead>
+				<tr>
+					<th class="actions"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></th>
+					<th class="description">Description</th>
+					<th class="cost">Cost</th>
+					<th class="status">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let order of orders" class="order" scope="row">
+					<td class="actions">
+						<span class="glyphicon glyphicon-pencil edit"></span>
+						<span class="glyphicon glyphicon-remove delete" (click)="deleteOrder(order)"></span></td>
+					<td class="description">{{order.description}}</td>
+					<td class="cost">{{order.costString}}</td>
+					<td class="status">
+						<span *ngIf="order.isIncomplete" class="label label-default">Incomplete</span>
+						<span *ngIf="order.isComplete" class="label label-success">Complete</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
