@@ -14,7 +14,7 @@ export class OrderService {
     public getOrders(): Promise<Order[]> {
         return this.http.get(this.ordersUrl, {headers: this.headers})
              .toPromise()
-			 .then(response => response.json().map(jsonOrder => new Order(jsonOrder)))
+			 .then(response => response.json().map(jsonOrder => Order.fromJson(jsonOrder)))
              .catch(this.handleError);
     }
     
@@ -33,14 +33,25 @@ export class OrderService {
 	public getOrder(id: number): Promise<Order> {
         return this.http.get(`${this.ordersUrl}/${id}`, {headers: this.headers})
              .toPromise()
-			 .then(response => new Order(response.json()))
+			 .then(this.convertResponseToOrderResource)
              .catch(this.handleError);
+    }
+
+    private convertResponseToOrderResource(response: any): Order {
+        return Order.fromJson(response.json());
     }
 
 	public updateOrder(order: Order): Promise<Order> {
 		return this.http.put(`${this.ordersUrl}/${order.id}`, JSON.stringify(order.serialize()), {headers: this.headers})
              .toPromise()
-			 .then(response => order)
+			 .then(this.convertResponseToOrderResource)
+             .catch(this.handleError);
+	}
+
+    public createOrder(order: Order): Promise<Order> {
+		return this.http.post(`${this.ordersUrl}`, JSON.stringify(order.serialize()), {headers: this.headers})
+             .toPromise()
+			 .then(this.convertResponseToOrderResource)
              .catch(this.handleError);
 	}
 }

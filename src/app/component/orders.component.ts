@@ -32,4 +32,8 @@ export class OrdersComponent implements OnInit {
 	public editOrder(order: Order) {
 		this.router.navigate(['/orders', order.id, 'edit']);
 	}
+
+	public createOrder() {
+		this.router.navigate(['/orders/create']);
+	}
 }

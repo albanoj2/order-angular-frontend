@@ -1,0 +1,349 @@
+INFO	?	main	2017-09-30T01:08:31.575Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
+INFO	?	pool-1-thread-1	2017-09-30T01:08:32.015Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:32.039Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.ShowMessageException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.ShowMessageException.create(ShowMessageException.java:29)
+	at org.javacs.ShowMessageException.warning(ShowMessageException.java:20)
+	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:185)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:217)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:182)
+	... 12 more
+
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:32.082Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:32.084Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:32.813Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:32.813Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:32.968Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:32.969Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:35.280Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:35.281Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+INFO	?	pool-1-thread-1	2017-09-30T01:08:39.721Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:39.721Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didSave(JavaLanguageServer.java:232)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:223)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:39.723Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:08:41.849Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:08:41.850Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:10.153Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:10.154Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:10.356Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:10.356Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:10.701Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:10.702Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:10.902Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.lambda$findSymbol$28(JavaLanguageServer.java:630)
+	at java.util.Optional.flatMap(Optional.java:241)
+	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:628)
+	at org.javacs.JavaLanguageServer.gotoDefinition(JavaLanguageServer.java:656)
+	at org.javacs.JavaLanguageServer$1.definition(JavaLanguageServer.java:117)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:144)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:10.903Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:12.934Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:12.935Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:15.742Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:15.744Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+INFO	?	pool-1-thread-1	2017-09-30T01:09:19.431Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:09:19.432Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didSave(JavaLanguageServer.java:232)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:223)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:09:19.432Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:10:42.424Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:10:42.425Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+SEVERE	?	pool-1-thread-1	2017-09-30T01:10:43.758Z	org.javacs.Main#lambda$run$0	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:216)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:221)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARNING	?	pool-1-thread-1	2017-09-30T01:10:43.759Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for c:\Users\Justin\Documents\GitHub\order-rest-backend\src\main\java\com\dzone\albanoj2\example\rest\controller\OrderController.java

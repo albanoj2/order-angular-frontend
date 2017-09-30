@@ -14,9 +14,15 @@ export class Order {
     isComplete: boolean;
     links: OrderLinks;
 
-	public constructor(json: any) {
-		this.deserialize(json);
+	public constructor() {
+		
 	}
+
+    public static fromJson(json: any): Order {
+        const order = new Order();
+        order.deserialize(json);
+        return order;
+    }
 
 	public deserialize(json: any) {
 		this.id = json.id;

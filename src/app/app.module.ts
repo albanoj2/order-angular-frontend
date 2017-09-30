@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrdersComponent } from './component/orders.component';
 import { EditOrderComponent } from './component/edit-order.component';
+import { CreateOrderComponent } from './component/create-order.component';
 
 import { OrderService } from './service/order.service';
 import { OrderDescriptionPipe } from './component/order-description.filter';
@@ -17,6 +18,7 @@ import { RouterModule }   from '@angular/router';
         AppComponent,
         OrdersComponent,
         EditOrderComponent,
+        CreateOrderComponent,
         OrderDescriptionPipe
     ],
     imports: [
