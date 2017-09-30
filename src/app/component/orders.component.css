@@ -45,3 +45,7 @@
 	padding-top: 12px;
 	text-align: right;
 }
+
+.no-orders-message {
+	text-align: center;
+}

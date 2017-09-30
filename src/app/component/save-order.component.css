@@ -1,0 +1,9 @@
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+input.cost {
+    width: 80px;
+}

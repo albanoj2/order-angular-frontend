@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OrderService } from '../service/order.service';
 import { Order } from '../order.resource';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { SaveOrderComponent } from './save-order.component';
 import 'rxjs/add/operator/switchMap';
 
 @Component({
@@ -9,14 +10,15 @@ import 'rxjs/add/operator/switchMap';
     styleUrls: ['./save-order.component.css'],
     selector: 'save-order'
 })
-export class EditOrderComponent implements OnInit {
+export class EditOrderComponent extends SaveOrderComponent {
 
 	protected order: Order;
 
 	public constructor(
 		private orderService: OrderService, 
 		private route: ActivatedRoute,
- 		private router: Router) {
+ 		router: Router) {
+			super(router);
 	}
 
 	ngOnInit() {
@@ -29,12 +31,8 @@ export class EditOrderComponent implements OnInit {
 		this.orderService.updateOrder(this.order).then(order => this.navigateToOrders());
 	}
 
-	private navigateToOrders() {
-		this.router.navigate(['/orders']);
-	}
-
-	protected onCancel() {
-		this.navigateToOrders();
+	protected getTitle(): string {
+		return "Edit Order";
 	}
 
 	protected getSaveButtonText() {

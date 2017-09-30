@@ -1,15 +1,21 @@
 <div>
+	<h2>{{getTitle()}}</h2>
 	<form class="form-horizontal" *ngIf="order !== undefined">
-		<div class="form-group">
+		<div class="form-group" [ngClass]="{'has-error': !isDescriptionValid()}">
 			<label for="description" class="col-sm-2 control-label">Description</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" id="description" name="description" [(ngModel)]="order.description" placeholder="Description">
+				<p *ngIf="!isDescriptionValid()" class="help-block">Description may not be blank</p>
 			</div>
 		</div>
-		<div class="form-group">
+		<div class="form-group" [ngClass]="{'has-error': !isCostValid()}">
 			<label for="cost" class="col-sm-2 control-label">Cost</label>
 			<div class="col-sm-10">
-				<input type="number" class="form-control" id="cost" name="cost" step="0.01" min="0.00" [(ngModel)]="order.cost" placeholder="Cost">
+				<div class="input-group">
+    				<span class="input-group-addon">$</span>
+					<input type="number" class="form-control cost" id="cost" name="cost" step="0.01" min="0.00" [(ngModel)]="order.cost" placeholder="Cost">
+				</div>
+				<p *ngIf="!isCostValid()" class="help-block">Cost may not be blank</p>
 			</div>
 		</div>
 		<div class="form-group">
@@ -23,7 +29,7 @@
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-primary" (click)="onSave()">{{getSaveButtonText()}}</button>
+				<button type="submit" class="btn btn-primary" (click)="onSave()" [disabled]="!canSubmit()">{{getSaveButtonText()}}</button>
 				<button type="submit" class="btn btn-default" (click)="onCancel()">Cancel</button>
 			</div>
 		</div>
