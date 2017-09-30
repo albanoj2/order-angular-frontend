@@ -23,8 +23,8 @@ export class OrderService {
         return Promise.reject(error.message || error);
     }
 
-	public deleteOrder(id: number): Promise<void> {
-		return this.http.delete(`${this.ordersUrl}/${id}`, {headers: this.headers})
+	public deleteOrder(order: Order): Promise<void> {
+		return this.http.delete(order.links.delete.href, {headers: this.headers})
              .toPromise()
 			 .then(response => null)
              .catch(this.handleError);
@@ -42,7 +42,7 @@ export class OrderService {
     }
 
 	public updateOrder(order: Order): Promise<Order> {
-		return this.http.put(`${this.ordersUrl}/${order.id}`, JSON.stringify(order.serialize()), {headers: this.headers})
+		return this.http.put(order.links.update.href, JSON.stringify(order.serialize()), {headers: this.headers})
              .toPromise()
 			 .then(this.convertResponseToOrderResource)
              .catch(this.handleError);

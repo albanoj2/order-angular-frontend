@@ -25,7 +25,7 @@ export class OrdersComponent implements OnInit {
 	}
 
 	public deleteOrder(order: Order) {
-		this.orderService.deleteOrder(order.id)
+		this.orderService.deleteOrder(order)
 			.then(() => this.retrieveOrders());
 	}
 

@@ -1,3 +1,3 @@
-export class Href {
+export class Link {
     public href: string;
 }

@@ -1,9 +1,9 @@
-import { Href } from './links';
+import { Link } from './links';
 
 class OrderLinks {
-    self: Href;
-    update: Href;
-    delete: Href;
+    self: Link;
+    update: Link;
+    delete: Link;
 }
 
 export class Order {
@@ -14,9 +14,7 @@ export class Order {
     isComplete: boolean;
     links: OrderLinks;
 
-	public constructor() {
-		
-	}
+	public constructor() {}
 
     public static fromJson(json: any): Order {
         const order = new Order();
