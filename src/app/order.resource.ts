@@ -10,7 +10,7 @@ export class Order {
 
     id: number; 
     description: string;
-    costInCents: number; 
+    private costInCents: number; 
     isComplete: boolean;
     links: OrderLinks;
 

@@ -4,9 +4,12 @@ import { Order } from './order.resource';
 class OrderFactory {
   
     public static createWithPrice(costInCents: number): Order {
-        const order = new Order({});
-        order.costInCents = costInCents;
-        return order;
+        return Order.fromJson({
+            id: 1,
+            description: 'Test',
+            costInCents: costInCents,
+            complete: false
+        })
     }
 }
 
