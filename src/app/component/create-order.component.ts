@@ -21,9 +21,10 @@ export class CreateOrderComponent extends SaveOrderComponent {
             super(router);
 	}
 
-	ngOnInit() {
-        this.order = new Order();
-        this.order.cost = 0.0;
+	protected loadOrder(): Promise<Order> {
+        const order = new Order();
+        order.cost = 0.0;
+		return Promise.resolve(order);
     }
 
     protected getTitle(): string {

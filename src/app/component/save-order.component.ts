@@ -8,10 +8,14 @@ export abstract class SaveOrderComponent implements OnInit {
 
     public constructor(private router: Router) {}
 
-    abstract ngOnInit();
+    protected abstract loadOrder(): Promise<Order>;
     protected abstract getTitle(): string;
     protected abstract onSave();
     protected abstract getSaveButtonText(): string;
+
+    ngOnInit() {
+        this.loadOrder().then(order => this.order = order);
+    }
 
     public isDescriptionValid(): boolean {
         return this.order !== undefined && 
