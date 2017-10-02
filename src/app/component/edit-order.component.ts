@@ -13,32 +13,30 @@ import 'rxjs/add/operator/toPromise';
 })
 export class EditOrderComponent extends SaveOrderComponent {
 
-	protected order: Order;
-
-	public constructor(
-		private orderService: OrderService, 
-		private route: ActivatedRoute,
- 		router: Router) {
-			super(router);
-	}
-
-	protected loadOrder(): Promise<Order> {
-		return new Promise<Order>(resolver => {
-			this.route.paramMap
-    			.switchMap(params => this.orderService.getOrder(+params.get('id')))
-    			.subscribe(order => resolver(order))
-		});
+    public constructor(
+        private orderService: OrderService, 
+        private route: ActivatedRoute,
+        router: Router) {
+            super(router);
     }
 
-	protected onSave() {
-		this.orderService.updateOrder(this.order).then(order => this.navigateToOrders());
-	}
+    protected loadOrder(): Promise<Order> {
+        return new Promise<Order>(resolver => {
+            this.route.paramMap
+                .switchMap(params => this.orderService.getOrder(+params.get('id')))
+                .subscribe(order => resolver(order))
+        });
+    }
 
-	protected getTitle(): string {
-		return "Edit Order";
-	}
+    protected onSave() {
+        this.orderService.updateOrder(this.order).then(order => this.navigateToOrders());
+    }
 
-	protected getSaveButtonText() {
-		return 'Update';
-	}
+    protected getTitle(): string {
+        return "Edit Order";
+    }
+
+    protected getSaveButtonText() {
+        return 'Update';
+    }
 }
