@@ -11,7 +11,7 @@ export class Order {
     id: number; 
     description: string;
     private costInCents: number; 
-    isComplete: boolean;
+    isComplete: boolean = false;
     links: OrderLinks;
 
 	public constructor() {}
